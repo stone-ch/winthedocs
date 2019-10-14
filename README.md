@@ -1,2 +1,2 @@
 # winthedocs
-This a project for documents.
+This is a project for documents.
