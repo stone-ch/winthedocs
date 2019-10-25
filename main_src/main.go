@@ -53,6 +53,7 @@ func main() {
 	//创建双语合成后的目标文件
 	fileName := "testFile.rst"
 	currFile,err:=os.Create(fileName)
+	defer currFile.Close()
 	for i,paragEn := range dataEn{
 		fmt.Println("Contents of file",+i,":", paragEn)
 		fmt.Println("Contents of file",+i,":", dataZh[i])
